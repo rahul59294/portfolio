@@ -15,21 +15,38 @@ export default function Contact() {
   const [formState, setFormState] = useState<'idle' | 'sending' | 'sent'>('idle');
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
     
     setFormState('sending');
     
-    setTimeout(() => {
-      setFormState('sent');
-      setFormData({ name: '', email: '', message: '' });
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/rs59294@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
       
-      // Reset back to idle after 4 seconds
-      setTimeout(() => {
+      if (response.ok) {
+        setFormState('sent');
+        setFormData({ name: '', email: '', message: '' });
+        
+        // Reset back to idle after 4 seconds
+        setTimeout(() => {
+          setFormState('idle');
+        }, 4000);
+      } else {
+        console.error("Form submission failed");
         setFormState('idle');
-      }, 4000);
-    }, 1500);
+      }
+    } catch (error) {
+      console.error("Form submission error", error);
+      setFormState('idle');
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
