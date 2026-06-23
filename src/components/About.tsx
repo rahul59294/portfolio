@@ -96,7 +96,7 @@ export default function About() {
         </div>
 
         {/* Two-Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[24px] items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-[24px] items-stretch">
 
           {/* LEFT COLUMN: Bio and Info Chips */}
           <motion.div
