@@ -108,13 +108,13 @@ export default function About() {
           >
             <div className="space-y-4">
               <h3 className="font-body font-semibold text-[20px] text-[#ffffff] leading-snug">
-                I speak fluent Python and even more fluent statistics.
+                I find patterns in data that others miss — then build tools to act on them.
               </h3>
               <p className="text-[15px] font-body text-[rgba(255,255,255,0.65)] leading-[1.8] font-normal">
-                I'm Rahul, a postgraduate statistics student from <span style={{ color: '#00897B', fontWeight: 500 }}>Amity University</span> with hands-on experience at the Ministry of Statistics and Programme Implementation (<span style={{ color: '#00897B', fontWeight: 500 }}>MoSPI</span>), where I processed <span style={{ color: '#00897B', fontWeight: 500 }}>50,000+</span> macroeconomic records and built KPI dashboards that reached real policymakers.
+                I'm Rahul, a postgraduate student of <span style={{ color: '#00897B', fontWeight: 500 }}>Statistics</span> from Amity University with a deep foundation in statistical theory — <span style={{ color: '#00897B', fontWeight: 500 }}>hypothesis testing</span>, <span style={{ color: '#00897B', fontWeight: 500 }}>regression modelling</span>, experimental design, stochastic processes, and econometrics. My work is grounded in rigorous methodology, whether I'm evaluating a government scheme for the <span style={{ color: '#00897B', fontWeight: 500 }}>Ministry of Statistics (MoSPI)</span> or building a <span style={{ color: '#00897B', fontWeight: 500 }}>predictive model</span> on 20 years of agricultural data.
               </p>
               <p className="text-[15px] font-body text-[rgba(255,255,255,0.65)] leading-[1.8] font-normal">
-                My work sits at the intersection of rigorous statistical methodology and practical business impact — from <span style={{ color: '#00897B', fontWeight: 500 }}>Monte Carlo simulations</span> and <span style={{ color: '#00897B', fontWeight: 500 }}>LASSO regression</span> to <span style={{ color: '#00897B', fontWeight: 500 }}>Power BI</span> dashboards and <span style={{ color: '#00897B', fontWeight: 500 }}>Streamlit</span> apps. I don't just run models; I translate them into decisions.
+                I then bring those insights to life through code — <span style={{ color: '#00897B', fontWeight: 500 }}>Python, R, SQL</span>, <span style={{ color: '#00897B', fontWeight: 500 }}>Power BI</span>, and <span style={{ color: '#00897B', fontWeight: 500 }}>Streamlit</span> — building <span style={{ color: '#00897B', fontWeight: 500 }}>dashboards, pipelines, and interactive platforms</span> that make statistical findings accessible to decision-makers. I don't just run models; I translate them into actions that organisations can act on.
               </p>
             </div>
 
